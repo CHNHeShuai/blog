@@ -1,0 +1,445 @@
+
+/* Nunito-normal - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: regular;
+  src: url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nunito'), local('Nunito-Normal'),
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+  
+/* Nunito-normal - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Nunito'), local('Nunito-Normal'),
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-700.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+  
+/* Nunito-normal - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Nunito'), local('Nunito-Normal'),
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Nunito/Nunito-v8-latin-300.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: regular;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-100.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-200.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-200.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-200.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-500.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-800.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* Raleway-normal - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Normal'),
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Raleway/Raleway-v11-latin-900.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+  
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+body{
+	font-family: 'Raleway', sans-serif;
+	     background: url(../images/images.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+	 
+}
+.header {
+    text-align: center;
+    margin-top: 4em;
+}
+.header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+.mail-section {
+    width: 40%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin: 5em auto 0;
+    background: #696F6F;
+     padding: 3em 3em 3em 1em;
+    position: relative;
+    border: 3px solid #fff;
+}
+.mail-image {
+    float: left;
+    width: 29%;
+    margin-right: 2%;
+	text-align: center;
+}
+.mail-form {
+    float: left;
+    width: 56%;
+    background: #fff;
+    padding: 2em 3em 2em 2em;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	text-align:center;
+}
+.mail-image h3 {
+    font-size: 1.2em;
+    color: #fff;
+}
+.mail-image h2 {
+    font-size: 1.5em;
+    color: #fff;    
+	margin-top: .5em;
+}
+.pass {
+    margin: 1.5em 0;
+}
+.close {
+    background: url('../images/close.png') no-repeat 0px 0px;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    width: 30px;
+}
+.newsletter-form {
+    padding-top: 1.5em;
+}
+.mail-form input[type="text"] {
+    padding: .8em .5em;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid #696F6F;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	background: url(../images/user.png) no-repeat 347px 13px #eee;
+	font-family: 'Raleway', sans-serif;
+}
+.mail-form input[type="password"] {
+    padding: .8em .5em;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid #696F6F;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	background: url(../images/lock.png) no-repeat 347px 13px #eee;
+	font-family: 'Raleway', sans-serif;
+}
+.mail-form input[type="submit"] {
+    font-size: 1.3em;
+    padding: .5em .3em;
+    width: 35%;
+    border: none;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: #696F6F;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+   font-family: 'Raleway', sans-serif;
+}
+.mail-form a p {
+    font-size: .95em;
+    text-transform: capitalize;
+    color: #9C9EA0;
+    margin-top: 1em;
+}
+.footer {
+    text-align: center;
+    padding: 3em 0;
+}
+.footer p {
+    font-size: .9em;
+    color: #fff;
+    margin: 0px;
+}
+.footer p a:hover {
+    color: #fff;
+}
+.footer p a {
+    color: #fff;
+}
+		/**responsive**/
+		
+@media(max-width:1440px){
+.mail-section {
+    width: 44%;
+}
+}
+@media (max-width: 1366px){
+.mail-section {
+    width: 47%;
+}
+}
+@media (max-width: 1280px){
+.mail-section {
+    width: 50%;
+}
+.mail-form input[type="text"] {
+     background: url(../images/user.png) no-repeat 344px 13px #eee;
+}
+.mail-form input[type="password"] {
+     background: url(../images/lock.png) no-repeat 344px 13px #eee;
+}
+}
+@media (max-width: 1080px){
+.mail-section {
+    width: 62%;
+}
+.header {
+    margin-top: 5em;
+}
+.header h1 {
+    font-size: 2.2em;
+}
+.mail-form input[type="submit"] {
+    font-size: 1.2em;
+}
+}
+@media (max-width: 991px){
+.header {
+    margin-top: 4em;
+}
+.mail-section {
+    width: 82%;
+	margin:4em auto 0;
+}
+.mail-form input[type="text"],.mail-form input[type="password"] {
+    font-size: .95em;
+}
+}
+@media (max-width: 640px){
+.mail-image {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+}
+.mail-form {
+    float: none;
+    width: 91%;
+	margin-top:1em;
+}
+.mail-form input[type="text"] {
+    background: url(../images/user.png) no-repeat 455px 13px #eee;
+}
+.mail-form input[type="password"] {
+    background: url(../images/lock.png) no-repeat 455px 13px #eee;
+}
+.mail-image h2 {
+    font-size: 1.3em;
+	}
+.mail-form a p {
+    font-size: .9em;
+}
+.header {
+    margin-top: 3em;
+}
+}
+@media (max-width: 480px){
+.mail-form {
+    float: none;
+    width: 85%;
+    margin-top: 1em;
+    padding: 2em 3em 2em 2em;
+}
+.header {
+    margin-top: 2em;
+}
+.mail-section {
+    width: 68%;
+    margin: 2em auto 0;
+	 padding: 2em 3em 3em 1em;
+
+}
+.mail-image h3 {
+    font-size: 1em;
+}
+.header h1 {
+    font-size: 2em;
+}
+.mail-form input[type="submit"] {
+    font-size: 1.05em;
+    width: 44%;
+}
+.mail-form input[type="text"] {
+    background: url(../images/user.png) no-repeat 260px 13px #eee;
+}
+.mail-form input[type="password"] {
+    background: url(../images/lock.png) no-repeat 260px 13px #eee;
+}
+}
+@media (max-width: 320px){
+.mail-section {
+    width: 78%;
+    margin: 2em auto 0;
+    padding: 2em 2em 2em 1em;
+}
+.mail-form input[type="text"], .mail-form input[type="password"] {
+    font-size: .9em;
+}
+.header h1 {
+    font-size: 1.8em;
+}
+.mail-form {
+    float: none;
+    width: 87%;
+    margin-top: 1em;
+    padding: 2em 2em 2em 1em;
+}
+.footer {
+    text-align: center;
+    padding: 2em 0;
+}
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+	
+	<!-- 加载数据库的属性文件，db.properties -->
+	<context:property-placeholder location="classpath:db.properties" />
+	<!-- 获取配置文件的内容   配置数据库信息 --> 
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close" >
+		<property name="driverClassName" value="${db.driver}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
+	</bean>
+	<!-- 注解扫描 -->
+	<context:component-scan base-package="hs.ssm.blog.service" />
+	<!-- 配置管理数据源 -->
+	<!-- spring 管理sqlsessionFactiory -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"  >
+		<!-- 配置数据源 -->
+		<property name="dataSource" ref="dataSource" />
+		<!-- 加载mybatis的全局配置文件 -->
+		<property name="configLocation" value="classpath:SqlMapConfig.xml" />
+		<!-- <property name="mapperLocations" value="classpath:mapper/CustomerMapper.xml"/> -->
+	</bean>
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="hs.ssm.blog.mapper" />
+	</bean>
+	<!-- 扫描mapper下的xml配置文件 -->
+	<!--<mybatis-spring:scan base-package="oracle.mapper"/>-->
+	
+</beans>

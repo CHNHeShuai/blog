@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.CustomerMapper" >
+    <select id="getCustomerByName" parameterType="java.lang.String" resultType="hs.ssm.blog.pojo.Customer">
+        SELECT * FROM customer WHERE username = #{username}
+    </select>
+    <!--查询所有客户-->
+    <select id="getCustomerList" resultType="hs.ssm.blog.pojo.Customer">
+        SELECT * FROM customer
+    </select>
+
+    <!--配置一对多-->
+    <select id="getCustomergbook" resultMap="getCustomergbookMap" >
+        SELECT	* FROM customer c,customergbook g WHERE c.id=g.custId
+    </select>
+    <!--type为 一 的pojo类里的list<customergbook>类型-->
+    <resultMap id="getCustomergbookMap" type="hs.ssm.blog.pojo.Customergbook">
+        <id column="cgid" property="cgid"></id>
+        <result column="createtime" property="createtime"></result>
+        <result column="article" property="article"></result>
+        <association property="customer" javaType="hs.ssm.blog.pojo.Customer">
+            <id column="id" property="id"></id>
+            <result column="username" property="username"></result>
+            <result column="password" property="password"></result>
+            <result column="image" property="image"></result>
+            <result column="telephone" property="telephone"></result>
+        </association>
+    </resultMap>
+
+    <insert id="addCustomer" parameterType="hs.ssm.blog.pojo.Customer">
+        INSERT INTO customer(username,password,image,telephone) VALUES(#{username},#{password},#{image},#{telephone})
+    </insert>
+    <delete id="deleteCustomer" parameterType="java.lang.Integer" >
+        DELETE FROM customer WHERE id = #{id}
+    </delete>
+    
+    <update id="updateCustomerPassword" parameterType="hs.ssm.blog.pojo.Customer">
+        UPDATE customer SET password = #{password} WHERE  id=${id}
+    </update>
+    <update id="updateCustomer" parameterType="hs.ssm.blog.pojo.Customer">
+        UPDATE customer SET username=#{username},image=#{image},telephone=#{telephone} WHERE id=#{id}
+    </update>
+</mapper>

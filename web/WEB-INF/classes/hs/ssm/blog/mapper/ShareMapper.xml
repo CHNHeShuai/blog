@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.ShareMapper" >
+  <select id="getShareList" resultType="hs.ssm.blog.pojo.Share">
+    SELECT * FROM share
+  </select>
+
+  <select id="getShareById" parameterType="java.lang.Integer" resultType="hs.ssm.blog.pojo.Share">
+    SELECT * FROM share WHERE id = #{id}
+  </select>
+
+  <insert id="addShare" parameterType="hs.ssm.blog.pojo.Share">
+    INSERT INTO share(title,image,createtime,des,article,pageview,click,cid) VALUES(#{title},#{image},#{createtime},#{des},
+    #{article},#{pageview},#{click},#{cid})
+  </insert>
+  <delete id="deleteShare" parameterType="java.lang.Integer">
+    DELETE FROM share WHERE id=#{id}
+  </delete>
+  <update id="updateShare" parameterType="hs.ssm.blog.pojo.Share">
+    UPDATE share set title=#{title},image=#{image},createtime=#{createtime},des=#{des},article=#{article},cid=#{cid} WHERE id=#{id}
+  </update>
+
+  <update id="updateSharePageview" parameterType="java.lang.Integer">
+    UPDATE share SET pageview = pageview + 1 WHERE id=#{id}
+  </update>
+  <update id="updateShareClick" parameterType="java.lang.Integer">
+    UPDATE share SET click = click + 1 WHERE id=#{id}
+  </update>
+
+  <select id="getShareByPage" resultType="hs.ssm.blog.pojo.Share" parameterType="java.lang.Integer">
+    select * from share limit #{currentPage},#{pageSize}
+  </select>
+  <select id="getShareCount" resultType="java.lang.Long">
+    SELECT COUNT(*) FROM share
+  </select>
+
+  <select id="getShareByOrder" resultType="hs.ssm.blog.pojo.Share">
+    SELECT	* FROM share ORDER BY click  DESC LIMIT 0,3;
+  </select>
+</mapper>

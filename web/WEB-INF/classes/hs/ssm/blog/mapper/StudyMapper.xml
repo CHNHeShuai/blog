@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.StudyMapper" >
+  <select id="getStudyList" resultType="hs.ssm.blog.pojo.Study">
+    SELECT * FROM study
+  </select>
+
+  <select id="getStudyById" parameterType="java.lang.Integer" resultType="hs.ssm.blog.pojo.Study">
+    SELECT * FROM study WHERE id = #{id}
+  </select>
+
+  <insert id="addStudy" parameterType="hs.ssm.blog.pojo.Study">
+    INSERT INTO study(title,image,createtime,des,article,pageview,click,cid) VALUES(#{title},#{image},#{createtime},#{des},
+    #{article},#{pageview},#{click},#{cid})
+  </insert>
+
+  <delete id="deleteStudy" parameterType="java.lang.Integer">
+    DELETE FROM study WHERE id=#{id}
+  </delete>
+  <update id="updateStudy" parameterType="hs.ssm.blog.pojo.Study">
+    UPDATE study set title=#{title},image=#{image},createtime=#{createtime},des=#{des},article=#{article},cid=#{cid} WHERE id=#{id}
+  </update>
+  <update id="updateStudyPageview" parameterType="java.lang.Integer" >
+    UPDATE study SET pageview = pageview + 1 WHERE id=#{id}
+  </update>
+
+  <update id="updateStudyClick" parameterType="java.lang.Integer">
+    UPDATE study SET click = click + 1 WHERE id=#{id}
+  </update>
+
+  <select id="getStudyByOrder" resultType="hs.ssm.blog.pojo.Study">
+    SELECT	* FROM study ORDER BY click  DESC LIMIT 0,8;
+  </select>
+  <select id="getStudyByOrderPageview" resultType="hs.ssm.blog.pojo.Study">
+    SELECT	* FROM study ORDER BY pageview  DESC LIMIT 0,6;
+  </select>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.IndexnewsMapper" >
+  <select id="getIndexnewsList" resultType="hs.ssm.blog.pojo.Indexnews">
+    SELECT * FROM indexnews
+  </select>
+  <select id="getIndexnewsById" parameterType="java.lang.Integer" resultType="hs.ssm.blog.pojo.Indexnews">
+    SELECT * FROM indexnews WHERE id = #{id}
+  </select>
+
+  <insert id="addIndexnews" parameterType="hs.ssm.blog.pojo.Indexnews">
+    INSERT INTO indexnews(title,image,createtime,des,article,pageview,click,cid) VALUES(#{title},#{image},#{createtime},#{des},
+    #{article},#{pageview},#{click},#{cid})
+  </insert>
+
+  <delete id="deleteIndexnews" parameterType="java.lang.Integer">
+    DELETE FROM indexnews WHERE id=#{id}
+  </delete>
+
+  <update id="updateIndexnews" parameterType="hs.ssm.blog.pojo.Indexnews">
+    UPDATE indexnews set title=#{title},image=#{image},createtime=#{createtime},des=#{des},article=#{article},cid=#{cid} WHERE id=#{id}
+  </update>
+
+  <update id="updateIndexnewsPageview" parameterType="java.lang.Integer">
+    UPDATE indexnews SET pageview = pageview + 1 WHERE id=#{id}
+  </update>
+  <update id="updateIndexnewsClick" parameterType="java.lang.Integer">
+    UPDATE indexnews SET click = click + 1 WHERE id=#{id}
+  </update>
+
+</mapper>

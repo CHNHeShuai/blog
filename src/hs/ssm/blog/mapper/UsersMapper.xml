@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.UsersMapper" >
+  <select id="getUsers" parameterType="java.lang.Integer" resultType="hs.ssm.blog.pojo.Users">
+    SELECT * FROM users WHERE id = #{id}
+  </select>
+  <update id="updateUsers" parameterType="hs.ssm.blog.pojo.Users">
+    UPDATE users SET username=#{username},netname=#{netname},job=#{job},address=#{address},
+                      email=#{email},telephone=#{telephone},image=#{image},weixin=#{weixin},des=#{des} WHERE id=1
+  </update>
+  <select id="findUsers" parameterType="java.lang.Integer" resultType="hs.ssm.blog.pojo.Users">
+    SELECT * FROM users WHERE id=#{id}
+  </select>
+
+  <update id="updatePassword" parameterType="java.lang.String">
+    UPDATE users set password=#{password} WHERE id=1
+  </update>
+
+  <select id="getUsersByName" parameterType="java.lang.String" resultType="hs.ssm.blog.pojo.Users">
+    SELECT * FROM users WHERE username=#{username}
+  </select>
+</mapper>

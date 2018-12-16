@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.IndextuijianMapper" >
+  <select id="getIndextuijianList" resultType="hs.ssm.blog.pojo.Indextuijian">
+    SELECT * FROM indextuijian
+  </select>
+  <select id="getIndextuijianById" parameterType="java.lang.Integer" resultType="hs.ssm.blog.pojo.Indextuijian">
+    SELECT * FROM indextuijian WHERE id = #{id}
+  </select>
+
+  <insert id="addIndextuijian" parameterType="hs.ssm.blog.pojo.Indextuijian">
+    INSERT INTO indextuijian(title,image,createtime,des,article,pageview,click,cid) VALUES(#{title},#{image},#{createtime},#{des},
+    #{article},#{pageview},#{click},#{cid})
+  </insert>
+
+  <delete id="deleteIndextuijian" parameterType="java.lang.Integer">
+    DELETE FROM indextuijian WHERE id=#{id}
+  </delete>
+  <update id="updateIndextuijian" parameterType="hs.ssm.blog.pojo.Indextuijian">
+    UPDATE indextuijian set title=#{title},image=#{image},createtime=#{createtime},des=#{des},article=#{article},cid=#{cid} WHERE id=#{id}
+  </update>
+
+  <update id="updateIndextuijianPageview" parameterType="java.lang.Integer">
+    UPDATE indextuijian SET pageview = pageview + 1 WHERE id=#{id}
+  </update>
+  <update id="updateIndextuijianClick" parameterType="java.lang.Integer">
+    UPDATE indextuijian SET click = click + 1 WHERE id=#{id}
+  </update>
+</mapper>

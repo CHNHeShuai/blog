@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="hs.ssm.blog.mapper.CustomergbookMapper" >
+    <insert id="insertGbook"  parameterType="hs.ssm.blog.pojo.Customergbook">
+        insert into customergbook(createtime,article,custId) VALUES(#{createtime},#{article},#{custId})
+    </insert>
+
+    <delete id="deleteGbook" parameterType="java.lang.Integer">
+        DELETE FROM customergbook WHERE cgid=#{cgid}
+    </delete>
+</mapper>
